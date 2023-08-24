@@ -1,0 +1,22 @@
+.modal__overlay {
+    background: rgba(255, 255, 255, 0.476);
+    display: flex;
+    width: 100%;
+    top: 7px;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.modal {
+    margin: 0 auto;
+    padding: 110px 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+    background: rgba(255, 255, 255, 0.633);
+    width: 98%;
+    height: 98vh;
+}

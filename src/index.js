@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App/App";
+import Sendsay from "sendsay-api";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// require("isomorphic-fetch"); // Apply the polyfill.
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export const sendsay = new Sendsay({
+  apiKey:
+    "19mL7Mhe4cragE1YGV5wCma8Kz-hfqUKd208lwnKmAsuJ3Nr1nbaP5NLYDK_gp5DA2xhRgO97rw",
+});
+
+sendsay
+  .request({ action: "sys.settings.get", list: ["about.id"] })
+  .then(function (res) {
+    console.log(res);
+  });
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

@@ -1,0 +1,78 @@
+.history-message {
+    margin: 0;
+    padding: 10px;
+}
+.history-message__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+}
+table {
+    border-spacing: 20px 15px;
+    width: 100%;
+}
+.table__th {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    opacity: 0.4000000059604645;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.table__th_status {
+    text-align: right;
+}
+.table__td {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+/* скрыть невмещающийся текст
+width: 100%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis; */
+
+.table__td_sended {
+    color: #03a100;
+    text-align: right;
+}
+.table__td_queue {
+    color: #000;
+    text-align: right;
+    opacity: 0.4000000059604645;
+}
+.table__td_error {
+    color: #f66;
+    text-align: right;
+}
+
+.history-message__empty {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
